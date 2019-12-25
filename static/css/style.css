@@ -1,0 +1,96 @@
+body {
+  background-color: gray;
+  text-align: center;
+  position: relative;
+}
+h1{
+  color: rgba(83, 2, 2, 0.788);
+}
+.text-row{
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+  width: 500px;
+  height: 200px;
+  top: 100px;
+  left: 0px;
+}
+#string {
+  top: 0px;
+  padding-bottom: 150px;
+  padding-left: 20px;
+  width: 500px;
+  height: 200px;
+  font-size: x-large;
+  background-color: white;
+  min-height: -52px;
+  box-sizing: border-box;
+  box-shadow: 30px 30px 30px 30px rgba(32, 33, 36, 0.28);
+  text-shadow: 0.5px 0.5px black;
+  border-radius:  18px;
+}
+.number-row{
+  position: absolute;
+  top: 150px;
+  right: 570px;
+  font-size: x-large;
+  background-color: white;
+  min-height: -52px;
+  box-sizing: border-box;
+  box-shadow: 30px 30px 30px 30px rgba(32, 33, 36, 0.28);
+  text-shadow: 0.5px 0.5px black;
+  border-radius:  18px;
+  
+}
+#number {
+  top: 250px;
+  right: 570px;
+  width: 200px;
+  height: 50px;
+  border-radius:  18px;
+  font-size: x-large;
+  padding-left: 10px;
+}
+.button{
+  font-size: x-large;
+  background-color: white;
+  min-height: -52px;
+  box-sizing: border-box;
+  box-shadow: 30px 30px 30px 30px rgba(32, 33, 36, 0.28);
+  text-shadow: 0.5px 0.5px black;
+  border-radius:  18px;
+}
+#button {
+  position: absolute;
+  top: 250px;
+  right: 570px;
+  width: 200px;
+  height: 50px;
+  border-radius:  18px;
+}
+.results-row {
+  position: absolute;
+  top: 100px;
+  right: 0px;
+  text-align: center;
+  background-color: rgb(128, 255, 0);
+  width: 500px;
+  height: 200px;
+  font-size: x-large;
+  min-height: -52px;
+  box-sizing: border-box;
+  box-shadow: 30px 30px 30px 30px rgba(32, 33, 36, 0.28);
+  text-shadow: 0.5px 0.5px black;
+  border-radius:  18px;
+ 
+}
+#result{
+  position: absolute;
+  color: blue;
+  top:10px;
+  left:20px;
+  
+}
+#error{
+  color: red;
+}
