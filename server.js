@@ -2,11 +2,12 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const bodyParser = require('body-parser');
-
+const env = require('dotenv').config()
 const { caesarize } = require('./caesarsCipher');
 const OPERATIONS ={caesarize};
 app.use(bodyParser.json())
-const port =process.env.PORT;
+let PORT = process.env.PORT || 3000;
+
 app.use(express.static('static'))
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'static','index.html')));
 
@@ -27,4 +28,4 @@ const opFun = OPERATIONS[op];
 const result = opFun(strToCaesarize,shiftNumber);
 res.json({status:'ok', result});
 });
-app.listen(port, () => console.log(`Caesars. app listening on port ${port}!`));
+app.listen(PORT, () => console.log(`Caesars. app listening on port ${PORT}!`));
