@@ -5,9 +5,8 @@ const bodyParser = require('body-parser');
 
 const { caesarize } = require('./caesarsCipher');
 const OPERATIONS ={caesarize};
-
 app.use(bodyParser.json())
-const port = 3000;
+const port =process.env.PORT;
 app.use(express.static('static'))
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'static','index.html')));
 
@@ -28,4 +27,4 @@ const opFun = OPERATIONS[op];
 const result = opFun(strToCaesarize,shiftNumber);
 res.json({status:'ok', result});
 });
-app.listen(port, () => console.log(`Caesars. app listening on port ${port}!`))
+app.listen(port, () => console.log(`Caesars. app listening on port ${port}!`));
