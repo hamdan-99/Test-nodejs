@@ -13,9 +13,8 @@
     "mocha": "^6.2.2"
   },
   "scripts": {
-    "test": "mocha *.test.js",
     "start": "node server.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "cd client && npm install "
   },
   "repository": { 
     "type": "git",
